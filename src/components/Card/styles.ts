@@ -18,7 +18,7 @@ export const Container = styled.div`
     border-radius: 8px 8px 0px 0px;
     margin-left: 11px;
     margin-top: 12px;
-    filter: blur(1px);
+    cursor: pointer;
   }
 
   > img:hover {

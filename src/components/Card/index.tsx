@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import { Container } from "./styles";
 
 import { BsGithub } from "react-icons/bs";
@@ -7,7 +8,13 @@ import { IProject } from "../../interfaces";
 const Card = ({ imagem, vercel, git }: IProject) => {
   return (
     <Container>
-      <img src={imagem} alt="" />
+      <img
+        onClick={() => {
+          window.open(`${vercel}`, "_blank");
+        }}
+        src={imagem}
+        alt=""
+      />
       <div className="buttons-card">
         <a href={git} target={"_blank"} rel="noreferrer">
           <button className="git">
