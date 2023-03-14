@@ -7,7 +7,7 @@ export const Conatiner = styled.div`
   left: 0;
   z-index: 1;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
