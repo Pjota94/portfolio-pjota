@@ -11,18 +11,18 @@ export const Container = styled.div`
     height: 250px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 44px;
     justify-content: center;
-    padding-left: 18px;
+    padding-left: 93px;
     width: 100%;
     list-style: none;
-    background-color: #adadade0;
+    background-color: ghostwhite;
   }
 
   li {
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 500;
   }
 
   a {
@@ -33,10 +33,16 @@ export const Container = styled.div`
     height: 34px;
   }
   a:hover {
-    border-bottom: 4px solid;
+    color: rgba(46, 53, 54, 0.54);
   }
 
   @media (min-width: 985px) {
     display: none;
+  }
+
+  @media (max-width: 587px) {
+    ul {
+      padding-left: 37px;
+    }
   }
 `;

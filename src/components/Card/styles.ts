@@ -55,3 +55,84 @@ export const Container = styled.div`
     }
   }
 `;
+
+export const DropName = styled.div`
+  position: relative;
+  &:hover span {
+    opacity: 1;
+    transition: 0.4s;
+    color: black;
+  }
+
+  span {
+    position: absolute;
+    background-color: #ededed;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 18px;
+    top: 40px;
+    left: 58px;
+    opacity: 0;
+    color: black;
+    width: 50px;
+    &::before {
+      content: "";
+      border-style: solid;
+      border-width: 10px 7px 0 7px;
+      border-color: #ededed transparent;
+      position: absolute;
+      transform: rotate(180deg);
+      left: 18px;
+      top: -10px;
+      color: black;
+    }
+  }
+
+  a > button {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: #ffff;
+  }
+`;
+
+export const DropApp = styled.div`
+  position: relative;
+
+  &:hover span {
+    opacity: 1;
+    transition: 0.4s;
+    color: black;
+  }
+
+  span {
+    position: absolute;
+    background-color: #ededed;
+    padding: 4px 0px;
+    border-radius: 4px;
+    font-size: 18px;
+    top: 40px;
+    left: -12px;
+    opacity: 0;
+    color: black;
+    width: 50px;
+    &::before {
+      content: "";
+      border-style: solid;
+      border-width: 10px 7px 0 7px;
+      border-color: #ededed transparent;
+      position: absolute;
+      transform: rotate(180deg);
+      left: 18px;
+      top: -10px;
+      color: black;
+    }
+  }
+
+  a > button {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: #ffff;
+  }
+`;

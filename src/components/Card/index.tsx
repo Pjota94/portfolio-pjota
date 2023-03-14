@@ -1,31 +1,54 @@
 /* eslint-disable no-restricted-globals */
-import { Container } from "./styles";
+import { Container, DropApp, DropName } from "./styles";
 
 import { BsGithub } from "react-icons/bs";
 import { FaWindowMaximize } from "react-icons/fa";
 import { IProject } from "../../interfaces";
+import { useContext } from "react";
+import { AuthMainContext } from "../../context/MainContext";
 
-const Card = ({ imagem, vercel, git }: IProject) => {
+const Card = ({ imagem, vercel, git, id }: IProject) => {
+  const { setIsModal, setIsModal2, setIsModal3, setIsModal4, setIsModal5 } =
+    useContext(AuthMainContext);
+
   return (
     <Container>
       <img
-        onClick={() => {
-          window.open(`${vercel}`, "_blank");
+        id={id}
+        onClick={(event: any) => {
+          // window.open(`${vercel}`, "_blank");
+          if (event.target.id === "5") {
+            setIsModal(true);
+          } else if (event.target.id === "1") {
+            setIsModal2(true);
+          } else if (event.target.id === "2") {
+            setIsModal3(true);
+          } else if (event.target.id === "3") {
+            setIsModal4(true);
+          } else if (event.target.id === "4") {
+            setIsModal5(true);
+          }
         }}
         src={imagem}
         alt=""
       />
       <div className="buttons-card">
-        <a href={git} target={"_blank"} rel="noreferrer">
-          <button className="git">
-            <BsGithub />
-          </button>
-        </a>
-        <a href={vercel} target={"_blank"} rel="noreferrer">
-          <button className="window">
-            <FaWindowMaximize />
-          </button>
-        </a>
+        <DropName>
+          <a href={git} target={"_blank"} rel="noreferrer">
+            <button className="git">
+              <span>Git</span>
+              <BsGithub />
+            </button>
+          </a>
+        </DropName>
+        <DropApp>
+          <a href={vercel} target={"_blank"} rel="noreferrer">
+            <button className="window">
+              <span>App</span>
+              <FaWindowMaximize />
+            </button>
+          </a>
+        </DropApp>
       </div>
     </Container>
   );
