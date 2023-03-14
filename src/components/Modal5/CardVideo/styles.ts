@@ -84,6 +84,21 @@ export const Container = styled.div`
 
   @media (max-width: 562px) {
     width: 424px;
+
+    video {
+      width: 324.51px;
+      /* height: 247.1px; */
+    }
+
+    .buttons {
+      margin-top: 5px;
+      width: 328.51px;
+      margin-bottom: 5px;
+    }
+
+    .botaoFechar {
+      margin-left: 66px;
+    }
   }
 
   @media (max-width: 471px) {
@@ -91,7 +106,7 @@ export const Container = styled.div`
     height: 204px;
 
     video {
-      height: 147.1px;
+      width: 291.51px;
     }
 
     .buttons {
