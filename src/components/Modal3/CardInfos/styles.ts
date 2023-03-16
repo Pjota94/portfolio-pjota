@@ -10,9 +10,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  h1 {
+  img {
+    width: 150px;
     margin: 30px 0px 30px 0px;
-    font-size: 26px;
   }
 
   p {
@@ -52,9 +52,8 @@ export const Container = styled.div`
     height: 237px;
     border-radius: 0px 0px 4px 4px;
 
-    h1 {
+    img {
       margin: 10px 0px 12px 0px;
-      font-size: 21px;
     }
 
     p {

@@ -3,6 +3,7 @@ import { CgClose } from "react-icons/cg";
 import { useContext } from "react";
 import { AuthMainContext } from "../../../context/MainContext";
 import "animate.css";
+import logo from "../../../assets/Logos/random.png";
 const CardInfos = () => {
   const { setIsModal3 } = useContext(AuthMainContext);
 
@@ -14,11 +15,11 @@ const CardInfos = () => {
           <CgClose />
         </button>
       </div>
-      <h1>Calculadora de Antecipação</h1>
+      <img src={logo} alt="" />
       <p>
-        Essa é uma Calculadora de antecipação de recebimentos, nela passamos o
-        valor, o número de parcelas e a taxa MDR da maquininha e ela simula o
-        valor que irá receber de acordo com o dia escolhido.
+        Esta é uma aplicação que me fez praticar o uso de API REST, nesse
+        desafio eu tinha que criar um figma e fazer Requisições para 3 tipos de
+        APIs diferentes.
       </p>
       <h3>Ferramentas</h3>
       <ul>
@@ -26,6 +27,7 @@ const CardInfos = () => {
         <li>TypeScript</li>
         <li>Styled-Components</li>
         <li>Axios</li>
+        <li>React-Litties</li>
       </ul>
     </Container>
   );

@@ -1,7 +1,7 @@
 import Card from "../Card";
 import { Container } from "./styles";
 import mks from "../../assets/mks.png";
-import calculadora from "../../assets/calculadora.png";
+import random from "../../assets/random.png";
 import kenzieHub from "../../assets/kenzieHub.png";
 import nukenzie from "../../assets/nukenzie.png";
 import hamburgueria from "../../assets/hamburgueria.png";
@@ -19,9 +19,9 @@ const Projetos = () => {
         />
         <Card
           id="2"
-          imagem={calculadora}
-          git={"https://github.com/Pjota94/calculadora"}
-          vercel={"https://calculadora-eta-two.vercel.app/"}
+          imagem={random}
+          git={"https://github.com/Pjota94/desafio-sharenergy-2023-01"}
+          vercel={"https://random-peach.vercel.app/"}
         />
         <Card
           id="3"

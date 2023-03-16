@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import video from "../../../assets/calculadora.mp4";
+import video from "../../../assets/random.mp4";
 import "animate.css";
 import { useContext } from "react";
 import { AuthMainContext } from "../../../context/MainContext";
@@ -11,7 +11,7 @@ const CardVideo = () => {
       <video src={video} controls loop autoPlay muted></video>
       <div className="buttons">
         <a
-          href="https://calculadora-eta-two.vercel.app/"
+          href="https://random-peach.vercel.app/"
           target="_blank"
           rel="noreferrer"
         >
@@ -19,7 +19,7 @@ const CardVideo = () => {
         </a>
         <a
           target="_blank"
-          href="https://github.com/Pjota94/calculadora"
+          href="https://github.com/Pjota94/desafio-sharenergy-2023-01"
           rel="noreferrer"
         >
           Repositório
