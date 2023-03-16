@@ -12,7 +12,15 @@ export const Conatiner = styled.div`
   justify-content: center;
   align-items: center;
 
+  .modal-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   @media (max-width: 1062px) {
-    flex-direction: column;
+    .modal-box {
+      flex-direction: column;
+    }
   }
 `;
