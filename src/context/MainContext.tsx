@@ -9,6 +9,8 @@ const MainContext = ({ children }: IProviderProps) => {
   const [isModal3, setIsModal3] = useState(false);
   const [isModal4, setIsModal4] = useState(false);
   const [isModal5, setIsModal5] = useState(false);
+  const [isModal6, setIsModal6] = useState(false);
+  const [isModal7, setIsModal7] = useState(false);
 
   return (
     <AuthMainContext.Provider
@@ -23,6 +25,10 @@ const MainContext = ({ children }: IProviderProps) => {
         setIsModal4,
         isModal5,
         setIsModal5,
+        isModal6,
+        setIsModal6,
+        isModal7,
+        setIsModal7,
       }}
     >
       {children}

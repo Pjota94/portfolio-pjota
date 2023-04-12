@@ -8,8 +8,15 @@ import { useContext } from "react";
 import { AuthMainContext } from "../../context/MainContext";
 
 const Card = ({ imagem, vercel, git, id }: IProject) => {
-  const { setIsModal, setIsModal2, setIsModal3, setIsModal4, setIsModal5 } =
-    useContext(AuthMainContext);
+  const {
+    setIsModal,
+    setIsModal2,
+    setIsModal3,
+    setIsModal4,
+    setIsModal5,
+    setIsModal6,
+    setIsModal7,
+  } = useContext(AuthMainContext);
 
   return (
     <Container>
@@ -27,6 +34,10 @@ const Card = ({ imagem, vercel, git, id }: IProject) => {
             setIsModal4(true);
           } else if (event.target.id === "4") {
             setIsModal5(true);
+          } else if (event.target.id === "6") {
+            setIsModal6(true);
+          } else if (event.target.id === "7") {
+            setIsModal7(true);
           }
         }}
         src={imagem}

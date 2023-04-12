@@ -23,6 +23,10 @@ export interface IValueProps {
   setIsModal4: Dispatch<SetStateAction<boolean>>;
   isModal5: boolean;
   setIsModal5: Dispatch<SetStateAction<boolean>>;
+  isModal6: boolean;
+  setIsModal6: Dispatch<SetStateAction<boolean>>;
+  isModal7: boolean;
+  setIsModal7: Dispatch<SetStateAction<boolean>>;
 }
 
 export interface IProviderProps {

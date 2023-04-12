@@ -12,10 +12,19 @@ import Sobre from "./components/Sobre";
 import Techs from "./components/Techs";
 import { AuthMainContext } from "./context/MainContext";
 import Global from "./styles/Global";
+import ModalCard6 from "./components/Modal6";
+import ModalCard7 from "./components/Modal7";
 
 function App() {
-  const { isModal, isModal2, isModal3, isModal4, isModal5 } =
-    useContext(AuthMainContext);
+  const {
+    isModal,
+    isModal2,
+    isModal3,
+    isModal4,
+    isModal5,
+    isModal6,
+    isModal7,
+  } = useContext(AuthMainContext);
   return (
     <>
       <Global />
@@ -30,6 +39,8 @@ function App() {
       {isModal3 && <ModalCard3 />}
       {isModal4 && <ModalCard4 />}
       {isModal5 && <ModalCard5 />}
+      {isModal6 && <ModalCard6 />}
+      {isModal7 && <ModalCard7 />}
     </>
   );
 }

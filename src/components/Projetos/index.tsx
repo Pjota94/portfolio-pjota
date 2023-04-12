@@ -5,6 +5,8 @@ import random from "../../assets/random.png";
 import kenzieHub from "../../assets/kenzieHub.png";
 import nukenzie from "../../assets/nukenzie.png";
 import hamburgueria from "../../assets/hamburgueria.png";
+import justTalk from "../../assets/justTalk.png";
+import marvel from "../../assets/marvel.png";
 
 const Projetos = () => {
   return (
@@ -52,6 +54,18 @@ const Projetos = () => {
           vercel={
             "https://react-entrega-s1-hamburgueria-da-kenzie-pjota94.vercel.app/"
           }
+        />
+        <Card
+          id="6"
+          imagem={justTalk}
+          git={"https://github.com/Pjota94/justTalk"}
+          vercel={"https://just-talk-pjota94.vercel.app/"}
+        />
+        <Card
+          id="7"
+          imagem={marvel}
+          git={"https://github.com/Pjota94/marvel-comics"}
+          vercel={"https://marvel-comics-pjota94.vercel.app/"}
         />
       </div>
     </Container>
