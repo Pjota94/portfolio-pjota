@@ -20,6 +20,18 @@ const Projetos = () => {
           vercel={"https://mks-frontend-challenge-react-pjota94.vercel.app/"}
         />
         <Card
+          id="6"
+          imagem={justTalk}
+          git={"https://github.com/Pjota94/justTalk"}
+          vercel={"https://just-talk-pjota94.vercel.app/"}
+        />
+        <Card
+          id="7"
+          imagem={marvel}
+          git={"https://github.com/Pjota94/marvel-comics"}
+          vercel={"https://marvel-comics-pjota94.vercel.app/"}
+        />
+        <Card
           id="2"
           imagem={random}
           git={"https://github.com/Pjota94/desafio-sharenergy-2023-01"}
@@ -54,18 +66,6 @@ const Projetos = () => {
           vercel={
             "https://react-entrega-s1-hamburgueria-da-kenzie-pjota94.vercel.app/"
           }
-        />
-        <Card
-          id="6"
-          imagem={justTalk}
-          git={"https://github.com/Pjota94/justTalk"}
-          vercel={"https://just-talk-pjota94.vercel.app/"}
-        />
-        <Card
-          id="7"
-          imagem={marvel}
-          git={"https://github.com/Pjota94/marvel-comics"}
-          vercel={"https://marvel-comics-pjota94.vercel.app/"}
         />
       </div>
     </Container>
